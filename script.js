@@ -67,7 +67,6 @@ function doGet(e) {
      
      result=(access+":"+name+":"+text);
   return ContentService.createTextOutput(result);
-//  return ContentService.createTextOutput(JSON.stringify(json) ).setMimeType(ContentService.MimeType.JSON); 
 }
 
 
@@ -92,11 +91,6 @@ function addLog(uid,entrance, name,result) {
 
 }
 
-
-
-/**
- * Remove leading and trailing single or double quotes
- */
 function stripQuotes(value) {
     return value.replace(/^["']|['"]$/g, "");
 }
